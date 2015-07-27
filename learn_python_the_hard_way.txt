@@ -4,6 +4,8 @@
 脚本默认编码ASCII，如包含非ASCII字符，需在第一或二行加
 # -*- coding: utf-8 -*-
 
-%s %r的区别
-%s specifier converts object using str()
+# string formatting operations
+
+specifier %s %r的区别
+%s converts object using str()
 %r converts it using repr()
