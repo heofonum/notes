@@ -1,0 +1,7 @@
+:NERDTree
+
+Ctrl-ww: though all windows
+Ctrl-wh: left a window
+Ctrl-wj: down a window
+Ctrl-wk: up a window
+Ctrl-wl: right a window
