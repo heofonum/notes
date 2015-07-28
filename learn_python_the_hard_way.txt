@@ -4,6 +4,8 @@
 脚本默认编码ASCII，如包含非ASCII字符，需在第一或二行加
 # -*- coding: utf-8 -*-
 
+一般单引号被用来创建简短的字符串，如'a'，'snow'
+
 # string formatting operations
 
 specifier %s %r的区别

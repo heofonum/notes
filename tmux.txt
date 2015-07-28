@@ -1,0 +1,4 @@
+install:
+
+1 brew install zsh
+2 brew install tmux
