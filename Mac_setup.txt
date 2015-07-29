@@ -1,0 +1,10 @@
+iTerm
+
+zsh
+
+homebrew
+    tree
+    tmux
+
+dash
+    man
