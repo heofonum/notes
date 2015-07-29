@@ -19,5 +19,9 @@ git clone https://github.com/scrooloose/nerdtree.git
 
 2)
 vim ~/.vimrc
-	
+	" auto open NERDTree and focus cursor in new document
 	autocmd vimenter * NERDTree
+    autocmd vimenter * wincmd p
+
+    " show hidden files in NERDTree
+    let NERDTreeShowHidden=1

@@ -5,3 +5,8 @@ Ctrl-wh: left a window
 Ctrl-wj: down a window
 Ctrl-wk: up a window
 Ctrl-wl: right a window
+
+t: open new tab
+T: open new tab while staying in current tab
+gt: cycle though all tabs
+gT: cycle though all tabs(moves to the left)
