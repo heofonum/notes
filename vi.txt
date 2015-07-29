@@ -7,3 +7,13 @@
 
 1 xp：交换前后两个字符的位置
 2 ddp：上下两行的位置交换
+
+motion
+  h - move left
+  j - move down
+  k - move uo
+  l - move right
+  w - move to next word
+  W - move to next blank delimited word
+  b - move to beginning of the word
+  B - move to beginning of blank delimited word

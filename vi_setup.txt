@@ -1,0 +1,23 @@
+1 pathogen
+
+1)
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+2)
+vim ~/.vimrc
+
+	execute pathogen#infect()
+	syntax on
+	filetype plugin indent on
+
+2 nerdtree
+
+1)
+cd ~/.vim/bundle
+git clone https://github.com/scrooloose/nerdtree.git
+
+2)
+vim ~/.vimrc
+	
+	autocmd vimenter * NERDTree
