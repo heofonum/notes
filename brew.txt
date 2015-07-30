@@ -1,0 +1,16 @@
+brew search <pkg>
+brew install <pkg>
+brew list
+brew remove <pkg>
+brew info <pkg>
+brew deps <pkg>
+brew update
+brew outdated
+brew upgrade / brew upgrade <pkg>
+
+从本地安装软件：
+1 手动下载压缩文件（一定要下载brew提示下载失败的文件）
+2 执行brew --cache获取brew缓存路径，将下载的文件放入缓存目录
+3 重新执行安装命令，brew会发现缓存中有了文件，就不去下载了:)
+
+

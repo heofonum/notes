@@ -10,3 +10,5 @@ t: open new tab
 T: open new tab while staying in current tab
 gt: cycle though all tabs
 gT: cycle though all tabs(moves to the left)
+
+ma 新建文件或目录
