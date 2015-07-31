@@ -1,7 +1,10 @@
 gem sources --remove https://rubygems.org/
 gem sources -a http://ruby.taobao.org/
 gem sources -l
+sudo gem update --system
 sudo gem install cocoapods
+
+touch Podfile
 
 pod install / pod update 更新慢
 pod install --verbose --no-repo-update
