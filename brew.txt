@@ -13,3 +13,56 @@ brew upgrade / brew upgrade <pkg>
 1 手动下载压缩文件（一定要下载brew提示下载失败的文件）
 2 执行brew --cache获取brew缓存路径，将下载的文件放入缓存目录
 3 重新执行安装命令，brew会发现缓存中有了文件，就不去下载了:)
+
+1 brew install gotags
+
+  gotags is a ctags-compatible tag generator for Go.
+
+1) edit .vimrc:
+
+let g:tagbar_type_go = {
+    \ 'ctagstype' : 'go',
+    \ 'kinds'     : [
+        \ 'p:package',
+        \ 'i:imports:1',
+        \ 'c:constants',
+        \ 'v:variables',
+        \ 't:types',
+        \ 'n:interfaces',
+        \ 'w:fields',
+        \ 'e:embedded',
+        \ 'm:methods',
+        \ 'r:constructor',
+        \ 'f:functions'
+    \ ],
+    \ 'sro' : '.',
+    \ 'kind2scope' : {
+        \ 't' : 'ctype',
+        \ 'n' : 'ntype'
+    \ },
+    \ 'scope2kind' : {
+        \ 'ctype' : 't',
+        \ 'ntype' : 'n'
+    \ },
+    \ 'ctagsbin'  : 'gotags',
+    \ 'ctagsargs' : '-sort -silent'
+\ }
+
+2 brew install ctags-exuberant
+
+which -a ctags
+
+/usr/bin/ctags ==> original ctags
+/usr/local/bin/ctags ==> exuberant ctags
+
+3 
+
+1) cd ~/.vim/bundle
+
+2) git clone https://github.com/majutsushi/tagbar.git
+
+3) :TagbarToggle
+
+4) vim ~/.vimrc
+
+nmap <F8> :TagbarToggle<CR>

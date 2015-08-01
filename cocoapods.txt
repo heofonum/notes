@@ -1,8 +1,24 @@
 gem sources --remove https://rubygems.org/
 gem sources -a http://ruby.taobao.org/
 gem sources -l
+sudo gem update --system
 sudo gem install cocoapods
+
+pod setup
+touch Podfile
 
 pod install / pod update 更新慢
 pod install --verbose --no-repo-update
 pod update --verbose --no-repo-update
+
+pod repo remove master 
+pod repo add master https://git.oschina.net/6david9/Specs.git 
+pod repo update
+
+https://gitcafe.com/akuandev/Specs.git
+http://git.oschina.net/akuandev/Specs.git
+
+查看下载进度
+du -sh *
+
+pod repo list

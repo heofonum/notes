@@ -1,4 +1,8 @@
-:NERDTree
+:NERDTree # open the NERDTree explorer
+:NERDTreeClose # close the NERDTree explorer
+:tabp # go to previous vi tab
+:tabn # go to next vi tab
+:tabnew # open new vi tab
 
 Ctrl-ww: though all windows
 Ctrl-wh: left a window

@@ -10,6 +10,22 @@ vim ~/.vimrc
 	execute pathogen#infect()
 	syntax on
 	filetype plugin indent on
+    
+    set cursorline
+    set showmatch
+
+    nnoremap j gj
+    nnoremap k gk
+
+    nnoremap B ^
+    nnoremap E $
+    
+    set tabstop=4
+    set softtabstop=4 " number of spaces in tab when editing
+    set shiftwidth=4
+    set expandtab
+
+    set autoindent
 
 2 nerdtree
 
@@ -45,6 +61,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'fatih/vim-go'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -52,3 +69,7 @@ filetype plugin indent on    " required
 
 3)
 launch vim and run :PligunInstall
+
+tips:
+
+set mouse=a
