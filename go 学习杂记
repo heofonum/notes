@@ -3,3 +3,24 @@
 姑且叫
 杂记
 罢
+
+------------
+
+strings are immutable
+a read-only slice of bytes
+
+bytes are mutable
+
+array之间的赋值是值的赋值，即当把一个array作为参数传入函数的时候，传入的其实是其副本
+
+如果需要使用指针，用slice类型
+
+slice是引用类型
+
+map是引用类型。如果两个map同时指向一个底层，那么一个改变，另一个也相应的改变
+
+make只能用于内建类型map、slice、channel的内存分配，返回有初始值（非零）的T类型
+new分配了零值填充的T类型的内存空间，并返回其地址，即一个*T类型的值
+
+零值，并非是空值，而是一种“变量未填充前”的默认值，通常为0
+
